@@ -99,9 +99,16 @@
 
     <div class="generator">
       <div class="sub">
-        <label for="word">Generated password</label>
-        <input type="text" class="text" id="word" autocomplete="off" autocapitalize="off">
-        <button id="insert-password">Insert</button>
+        <div class="password">
+          <label for="word">Generated password</label>
+          <input type="password" class="text" id="word" autocomplete="off" autocapitalize="off">
+          <input type="text" class="text" name="word-text" id="word-text" autocomplete="off" autocapitalize="off">
+            <span class="show">
+              <label for="show-word">Show</label>
+              <input type="checkbox" name="show-word" id="show-word">
+            </span>
+          <button id="insert-password">Insert</button>
+        </div>
       </div>
     </div>
     <script type="text/javascript" src="./lib/app.js"></script>

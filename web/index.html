@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
     <title>Vault</title>
+    <script type="text/javascript" src="./lib/crypto-js-3.1.2.js"></script>
+    <script type="text/javascript" src="./lib/vault.js"></script>
     <link rel="stylesheet" href="./lib/style.css">
   </head>
   <body>
@@ -96,13 +98,19 @@
 
     <div class="generator">
       <div class="sub">
-        <label for="word">Generated password</label>
-        <input type="text" class="text" id="word" autocomplete="off" autocapitalize="off">
+        <div class="password">
+          <label for="word">Generated password</label>
+          <input type="password" class="text" id="word" autocomplete="off" autocapitalize="off">
+          <input type="text" class="text" name="word-text" id="word-text" autocomplete="off" autocapitalize="off">
+            <span class="show">
+              <label for="show-word">Show</label>
+              <input type="checkbox" name="show-word" id="show-word">
+            </span>
+        </div>
       </div>
     </div>
 
-    <script src="./vault-min.js"></script>
+    <script src="./lib/app.js"></script>
 
   </body>
 </html>
-
